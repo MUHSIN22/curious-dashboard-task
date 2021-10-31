@@ -32,6 +32,7 @@ export default function Navbar() {
             <div className="extra-btn">
                 <div className="dark-and-light-toggle" onClick={()=>{setToggles({...toggles,dark: !toggles.dark})}}>
                     <BsMoon/>
+                    {toggles.dark?"Ligh Mode":"Dark Mode"}
                 </div>
                 <NavBtn navText="Logout" />
             </div>
