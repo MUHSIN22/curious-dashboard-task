@@ -5,6 +5,7 @@ import { CgProfile, CgCrown } from 'react-icons/cg'
 import { MdOutlineAnalytics, MdOutlineMonetizationOn } from 'react-icons/md'
 import { BsEmojiSmile } from 'react-icons/bs'
 import { AiOutlineSetting } from 'react-icons/ai'
+import { BiLogOut } from "react-icons/bi"
 
 export default function NavBtn({navText, btnStatus}) {
     const [icon,setIcon] = useState(null);
@@ -29,6 +30,9 @@ export default function NavBtn({navText, btnStatus}) {
             case 'Settings':
                 setIcon(6);
                 break;
+            case 'Logout':
+                setIcon(7);
+                break;
             default:
                 setIcon(null)
     
@@ -50,7 +54,9 @@ export default function NavBtn({navText, btnStatus}) {
                                 <BsEmojiSmile/>
                                     :(icon === 6) ?
                                         <AiOutlineSetting/> 
-                                            :null
+                                            :(icon === 7)?
+                                                <BiLogOut/>:null
+
             }
             <span>{navText}</span>
         </Link>

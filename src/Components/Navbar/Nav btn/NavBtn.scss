@@ -18,3 +18,13 @@
     color: rgb(242, 98, 124);
     background: rgba(242, 98, 124, 0.089) ;
 }
+@media only screen and (max-width: 1000px) {
+    .btn-nav{
+        background: transparent;
+        flex-direction: row;
+        height:max-content;
+        padding: 0.5rem 0;
+        width: max-content;
+
+    }
+}

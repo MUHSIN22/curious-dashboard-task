@@ -8,6 +8,7 @@
     border-bottom: 1px solid var(--tint-divider-color);
     align-items: center;
     grid-area: header;
+    background: var(--tint-background-color);
     .btn-link{
         padding: 1rem;
         color: var(--tint-text-color);
@@ -32,6 +33,7 @@
         font-size: 13px;
         padding: 0.5rem;
         padding-left: 2rem;
+        color: var(--tint-text-color)
     }
     .link{
         margin-right: 2rem;
