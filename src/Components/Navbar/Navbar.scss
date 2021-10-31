@@ -1,0 +1,17 @@
+.navbar{
+    padding: 0 1rem;
+    border-right:  1px solid var(--tint-divider-color);
+    height:100vh;
+    .logo-wrapper{
+        height: 4rem;
+        display: grid;
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    .navbar{
+        display: none;
+    }
+}

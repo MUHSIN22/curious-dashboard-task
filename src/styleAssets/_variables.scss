@@ -1,0 +1,36 @@
+:root {
+	--tint-text-color: #222222;
+	--tint-light-text-color: #666666;
+	--tint-input-placeholder: #A8A8A8;
+	--tint-button-border-color: #E7E6E8;
+	--tint-background-color: #FFFFFF;
+	--tint-main-background-color: #FAF6F3;
+	--tint-grey-background-color: #F5F5F5;
+	--tint-secondary-actions-color: #F5F5F5;
+	--tint-hover-secodnary-color: #F0F0F0;
+	--tint-input-border-color: #DBDBDB;
+	--tint-divider-color: #F7F5F4;
+	--tint-upload-background-color: #FAFAFA;
+	--tint-hightlight-color: #feeef2;
+	--tint-border-radio-hightlight: #feeef2;
+	--tint-active-menu-color: #FFF9FA;
+	--tint-popover-shadow: rgb(0 0 0 / 30%);
+}
+html[data-theme="dark"] {
+	--tint-text-color: #FFFFFF;
+	--tint-light-text-color: rgba(255,255,255,0.8);
+	--tint-input-placeholder: rgba(255,255,255,0.5);
+	--tint-button-border-color: rgba(255,255,255,0.2);
+	--tint-background-color: #1E1E1E;
+	--tint-main-background-color: #121212;
+	--tint-grey-background-color: #121212;
+	--tint-secondary-actions-color: #2C2C2C;
+	--tint-hover-secodnary-color: #333333;
+	--tint-input-border-color: rgba(255,255,255,0.2);
+	--tint-divider-color: #2C2C2C;
+	--tint-upload-background-color: #1E1E1E;
+	--tint-hightlight-color: rgba(249,116,143,0.12);
+	--tint-active-menu-color: rgba(255,156,176,0.05);
+	--tint-border-radio-hightlight: rgb(19 19 19 / 71%);
+	--tint-popover-shadow: #000;
+}

@@ -1,0 +1,105 @@
+@import '/src/styleAssets/variables';
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    border-bottom: 1px solid var(--tint-divider-color);
+    align-items: center;
+    grid-area: header;
+    .btn-link{
+        padding: 1rem;
+        color: var(--tint-text-color);
+        position: relative;
+        display: inline-flex;
+    }
+    .btn-link-active{
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0) linear-gradient(96.04deg, rgb(242, 98, 124) 30.59%, rgb(255, 127, 104) 90.17%) repeat scroll 0% 0%;
+        }
+    }
+    .link-copier{
+        background: var(--tint-main-background-color);
+        border-radius: 5rem;
+        font-size: 13px;
+        padding: 0.5rem;
+        padding-left: 2rem;
+    }
+    .link{
+        margin-right: 2rem;
+    }
+    .btn-copy{
+        font-size: 13px;
+        font-weight: 600;
+        padding: 0.7rem 1rem;
+        background: var(--tint-background-color);
+        color: rgb(242, 98, 124);
+        border: none;
+        border-radius: 5rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover{
+            background: rgba(0, 0, 0, 0) linear-gradient(96.04deg, rgb(242, 98, 124) 30.59%, rgb(255, 127, 104) 90.17%) repeat scroll 0% 0%;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .header-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .header{
+        flex-direction: column;
+        height: max-content;
+        .link-copier{
+            display: none;
+        }
+        .header-mobile{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem;
+        }
+        .header-btns{
+            display: flex;
+        }
+        .hamburger-btn{
+            width: 3rem;
+            color: var(--tint-text-color);
+            background: transparent;
+            border: none;
+        }
+        .hamburger{
+            transform: scale(2)
+        }
+        .preview-and-copy{
+            color: rgb(0, 0, 0);
+            background: rgb(245, 245, 245) none repeat scroll 0% 0%;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            margin: 0 .5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transform: scale(1.1)
+
+        }
+        .mobile-logo{
+            margin-left: 1rem;
+        }
+        .link-btn-wrapper{
+            margin-right: auto;
+            margin-top: 1rem;
+            font-size: 15px;
+        }
+    }
+}
